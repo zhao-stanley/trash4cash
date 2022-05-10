@@ -18,7 +18,7 @@ const App = () => {
             <span className="text-white">It's a </span>win-win.
           </h1>
           <Link
-            className="bg-[#60BF88] opacity-[1] text-white p-4 text-2xl font-medium rounded-xl transition-[3s] hover:bg-[#60bf88be] mt-8"
+            className="bg-[#60BF88] text-white p-4 text-2xl font-medium rounded-xl transition-[3s] hover:bg-[#60bf88be] mt-8"
             to="/browse"
           >
             Browse available stores

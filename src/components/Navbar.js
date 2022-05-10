@@ -27,7 +27,6 @@ const Navbar = ({ current }) => {
     navigation[current].current = true;
   }
 
-
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -36,7 +35,7 @@ const Navbar = ({ current }) => {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white transition-[3s] hover:bg-gray-700">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -69,7 +68,7 @@ const Navbar = ({ current }) => {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            : "text-gray-300 hover:bg-gray-700 transition-[3s] hover:text-white",
                           "px-3 py-2 rounded-md text-sm lg:text-xl lg:my-1 font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -84,7 +83,7 @@ const Navbar = ({ current }) => {
                 {/* Profile dropdown */}
                 <Menu as="div" className="ml-3 relative">
                   <div>
-                    <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                    <Menu.Button className="bg-gray-800 flex text-sm rounded-full">
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
@@ -128,7 +127,7 @@ const Navbar = ({ current }) => {
                             to="/profile"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "block px-4 py-2 text-sm text-gray-700 transition-[3s]"
                             )}
                           >
                             Your Profile
@@ -141,7 +140,7 @@ const Navbar = ({ current }) => {
                             to="/settings"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "block px-4 py-2 text-sm text-gray-700 transition-[3s]"
                             )}
                           >
                             Settings
@@ -154,7 +153,7 @@ const Navbar = ({ current }) => {
                             href="/"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              "block px-4 py-2 text-sm text-gray-700 transition-[3s]"
                             )}
                           >
                             Sign out
@@ -180,18 +179,20 @@ const Navbar = ({ current }) => {
               <Disclosure.Panel className="sm:hidden">
                 <div className="p-1 space-y-1 bg-gray-900 rounded-lg w-auto">
                   {navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      className={classNames(
-                        item.current
-                          ? "bg-gray-900 text-white"
-                          : "text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg",
-                        "block px-3 py-2 text-base font-medium w-full"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
-                    >
-                      <Link to={item.href}>{item.name}</Link>
-                    </Disclosure.Button>
+                    <Link to={item.href} className="w-full">
+                      <Disclosure.Button
+                        key={item.name}
+                        className={classNames(
+                          item.current
+                            ? "bg-gray-900 text-white"
+                            : "text-gray-300 hover:bg-gray-800 hover:text-white rounded-lg",
+                          "block px-3 py-2 text-base font-medium w-full"
+                        )}
+                        aria-current={item.current ? "page" : undefined}
+                      >
+                        {item.name}
+                      </Disclosure.Button>
+                    </Link>
                   ))}
                 </div>
               </Disclosure.Panel>
