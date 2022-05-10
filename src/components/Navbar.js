@@ -6,22 +6,27 @@ import icon from "../img/icon.png";
 import trash4cash from "../img/trash4cash.svg";
 import wayne from "../img/wayne.png";
 
+let balance = 1234;
+
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Browse", href: "/browse", current: false },
-  { name: "Team", href: "#", current: false },
+  { name: "Leaderboard", href: "/leaderboard", current: false },
 ];
 
 const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
 
-const Navbar = ({ balance, current }) => {
+const Navbar = ({ current }) => {
   //Uncheck the tabs
   navigation.forEach((e) => {
     e.current = false;
   });
-  navigation[current].current = true;
+  if (!isNaN(current)) {
+    navigation[current].current = true;
+  }
+
 
   return (
     <Disclosure as="nav" className="bg-gray-800">
@@ -119,28 +124,28 @@ const Navbar = ({ balance, current }) => {
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="/"
+                          <Link
+                            to="/profile"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
                             Your Profile
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="/"
+                          <Link
+                            to="/settings"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
                             Settings
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>

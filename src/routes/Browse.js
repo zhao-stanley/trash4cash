@@ -1,4 +1,3 @@
-import React from "react";
 import MapBox from "../components/MapBox";
 import Navbar from "../components/Navbar";
 import stores from "../data/stores.json";
@@ -27,7 +26,7 @@ stores.forEach((s, index) => {
 const Browse = () => {
   return (
     <>
-      <Navbar balance={5000} current={1} />
+      <Navbar current={1} />
       <div className="bg-gray-800 h-screen w-full flex flex-col items-center justify-center font-[Inter]">
         <div className="border-[#88cca4] border-[3px] w-[90vw] rounded-3xl overflow-clip shadow-lg shadow-black">
           <MapBox />

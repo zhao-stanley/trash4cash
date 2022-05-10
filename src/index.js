@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Browse from "./routes/Browse";
+import Profile from "./routes/Profile"; 
+import Leaderboard from "./routes/Leaderboard";
+import Settings from "./routes/Settings";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,7 +14,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-          <Route path="browse" element={<Browse />} />
+        <Route path="browse" element={<Browse />} />
+        <Route path="leaderboard" element={<Leaderboard />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="settings" element={<Settings />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
