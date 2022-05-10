@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Target",
+    "address": "101 Shore Rd, Port Washington, NY 11050",
+    "long": -73.704208,
+    "lat": 40.841282
+  },
+  {
+    "name": "The Home Depot",
+    "address": "86 Jericho Turnpike, Jericho, NY 11753",
+    "long": -73.561810,
+    "lat": 40.780300
+  },
+  {
+    "name": "Kohl's",
+    "address": "28 Jericho Turnpike, Jericho, NY 11753",
+    "long": -73.5665727,
+    "lat": 40.7786138
+  },
+  {
+    "name": "Macy's",
+    "address": "1100 Northern Blvd, Manhasset, NY 11030",
+    "long": -73.69160461425781,
+    "lat": 40.79360580444336
+  },
+  {
+    "name": "The Home Depot",
+    "address": "600 Hempstead Turnpike, Elmont, NY 11003",
+    "long": -73.702492,
+    "lat": 40.709080
+  },
+  {
+    "name": "Dollar Tree",
+    "address": "250 Jericho Turnpike Ste 80, Floral Park, NY 11001",
+    "long": -73.701543,
+    "lat": 40.7289529
+  },
+  {
+    "name": "Target",
+    "address": "160-08 Jamaica Ave, Queens, NY 11432",
+    "long": -73.798550,
+    "lat": 40.703540
+  }
+]

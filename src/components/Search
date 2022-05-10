@@ -1,0 +1,54 @@
+//Geolocation Search
+import axios from "axios";
+const token = process.env.REACT_APP_MAPBOXTOKEN;
+
+const [text, setText] = useState("");
+const [lat, setLat] = useState(0);
+const [long, setLong] = useState(0);
+
+const searchCoords = async (query) => {
+  const response = await axios.get(
+    `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURI(
+      query
+    )}.json?access_token=${token}&proximity=ip`
+  );
+
+  if (response.data.features.length === 0) {
+    return console.log("Location doesn't exist or not found");
+  }
+
+  let longitude = response.data.features[0].center[0];
+  let latitude = response.data.features[0].center[1];
+
+  console.log(response.data.features[0]);
+  console.log(response.data.features[0].place_name);
+  setLong(longitude);
+  setLat(latitude);
+};
+
+//JSX
+
+<div className="flex flex-col items-center justify-center">
+  <div className="flex flex-row gap-2">
+    <input
+      className="rounded-xl p-2"
+      type="text"
+      id="input"
+      autoComplete="off"
+    ></input>
+    <button
+      className="bg-[#88cca48c] px-4 rounded-xl text-white"
+      onClick={() => {
+        let input = document.getElementById("input").value;
+        if (!input) {
+          return;
+        }
+        setText(input);
+        searchCoords(input);
+      }}
+    >
+      Search
+    </button>
+  </div>
+  <h1 className="text-white">Your Search: {text}</h1>
+</div>;
