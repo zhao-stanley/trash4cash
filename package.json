@@ -5,6 +5,8 @@
   "dependencies": {
     "@headlessui/react": "^1.6.1",
     "@heroicons/react": "^1.0.6",
+    "@react-three/drei": "^9.7.1",
+    "@react-three/fiber": "^8.0.13",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",

@@ -28,7 +28,7 @@ const Navbar = ({ current }) => {
   }
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 z-10 relative">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -179,9 +179,8 @@ const Navbar = ({ current }) => {
               <Disclosure.Panel className="sm:hidden">
                 <div className="p-1 space-y-1 bg-gray-900 rounded-lg w-auto">
                   {navigation.map((item) => (
-                    <Link to={item.href} className="w-full">
+                    <Link to={item.href} key={item.name} className="w-full">
                       <Disclosure.Button
-                        key={item.name}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"

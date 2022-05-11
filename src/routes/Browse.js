@@ -1,7 +1,7 @@
 import MapBox from "../components/MapBox";
 import Navbar from "../components/Navbar";
 import stores from "../data/stores.json";
-import searchFilter from "../searchFilter";
+import searchFilter from "../utility/searchFilter";
 let storelist = [];
 
 stores.forEach((s, index) => {
