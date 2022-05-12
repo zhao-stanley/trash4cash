@@ -28,7 +28,7 @@ const Browse = () => {
     <>
       <Navbar current={1} />
       <div className="bg-gray-800 h-screen w-full flex flex-col items-center justify-center font-[Inter]">
-        <div className="border-[#88cca4] border-[3px] w-[90vw] rounded-3xl overflow-clip shadow-lg shadow-black">
+        <div className="border-[#88cca4] border-[3px] w-[90vw] rounded-3xl overflow-hidden shadow-lg shadow-black z-[1]">
           <MapBox />
         </div>
         <div className="flex flex-row items-center gap-2 rounded-lg py-1 px-2 my-2 bg-white">
