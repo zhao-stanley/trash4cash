@@ -6,7 +6,7 @@ import {
   Environment,
   ContactShadows,
 } from "@react-three/drei";
-import mobileCheck from "../utility/mobileCheck";
+import mobileCheck from "../../utility/mobileCheck";
 
 function Model(props) {
   const { nodes, materials } = useGLTF("/earth.gltf");

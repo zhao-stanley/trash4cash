@@ -1,48 +1,57 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Globe from "./components/Globe";
-import mobileCheck from "./utility/mobileCheck";
+import Landing from "./components/App/Landing";
+import laptop from "./img/laptop.png";
+import world from "./img/world.png";
+import bicycle from "./img/bicycle.png";
+import plant from "./img/plant.png";
+import money from "./img/money.png";
 
 const App = () => {
   return (
     <>
       <Navbar current={0} />
-      <div className="bg-gray-800 h-screen w-screen flex flex-col items-center justify-center font-[Inter] overflow-x-hidden">
-        <div className="h-[80vh] items-center flex flex-col justify-center">
-          <Globe />
-          <div
-            className={
-              mobileCheck()
-                ? "text-[#5cf695] z-[1] font-bold text-5xl sm:text-7xl m-5 text-center break-words select-none w-screen h-screen flex flex-col justify-center items-center" //expand the hero section over the canvas + remove rotate capability if using mobile device
-                : "text-[#5cf695] z-[1] font-bold text-5xl sm:text-7xl m-5 text-center break-words select-none w-auto"
-            }
-          >
-            <h1>
-              <span className="text-white">Save the </span>Earth
-            </h1>
-            <h1>
-              <span className="text-white">Save </span>money
-            </h1>
-            <h1>
-              <span className="text-white">It's a </span>win-win.
-            </h1>
-            <div className={mobileCheck()
-                ? "w-screen h-auto z-[1] flex flex-col items-center justify-center mt-12"
-                : "h-auto z-[1] flex flex-col items-center justify-center mt-8"}>
-            <Link
-              className="bg-[#60BF88] text-white text-lg p-2 sm:p-4 sm:text-2xl font-medium rounded-xl transition-[3s] hover:bg-[#3e7d58] shadow-lg shadow-black"
-              to="/browse"
-            >
-              Browse available stores
-            </Link>
-          </div>
-          </div>
+      <Landing />
+      <div className="bg-gray-800 h-screen w-full flex flex-col items-center font-[Inter] text-white">
+        <div className="flex flex-col items-center justify-center text-center mx-5 my-4">
+          <h1 className="text-white text-4xl font-bold">
+            What is Trash<span className="text-gray-400">4</span>
+            <span className="text-[#5cf695]">Cash</span>?
+          </h1>
+          <p className="text-white">
+            <br />
+            It's a web application aimed to provide incentive for recycling and
+            providing a simple way to do so.
+            <br /> <br />
+            Support the local stores near you and get rewarded for cleaning up
+            your community! Getting{" "}
+            <span className="text-[#5cf695]">started is easy</span>!
+          </p>
+          <img src={laptop} className="animate-wiggle" alt="Laptop" />
         </div>
-        <div className="h-[20vh] w-screen z-10"></div>
       </div>
-      <div className="bg-gray-800 h-screen w-full flex flex-col items-center justify-center font-[Inter]">
-        <h1>test</h1>
+      <div className="bg-gray-800 h-[50vh] w-full flex flex-col items-center font-[Inter] text-white">
+        <div className="flex flex-col items-center justify-center text-center mx-5">
+          <h1 className="text-white text-3xl font-bold">
+            1. <span className="text-[#5cf695]">Browse</span> available stores
+          </h1>
+          <img src={world} className="animate-wiggle2" alt="World" />
+          <h1 className="text-white text-3xl font-bold">
+            2. <span className="text-[#5cf695]">Visit</span> one near you
+          </h1>
+          <img src={bicycle} className="animate-bicycle" alt="World" />
+          <h1 className="text-white text-3xl font-bold">
+            3. <span className="text-[#5cf695]">Recycle</span> your goods
+          </h1>
+          <img src={plant} className="animate-hovering" alt="World" />
+          <h1 className="text-white text-3xl font-bold">4. Submit your form and <span className="text-[#5cf695]">get rewarded</span></h1>
+          <img src={money} className="animate-money" alt="World" />
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </div>
       </div>
     </>
   );
