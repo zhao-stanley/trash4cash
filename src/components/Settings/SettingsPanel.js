@@ -1,10 +1,16 @@
 import SettingsInput from "./SettingsInput";
 import updateProfile from "../../utility/updateProfile";
+import { useState } from "react";
+
 
 const SettingsPanel = () => {
+  const [updated, setUpdated] = useState(null);
   return (
     <>
-      <div className="flex flex-col gap-4 w-full justify-center items-center mt-4">
+      <div
+        className="flex flex-col gap-4 w-full justify-center items-center mt-4"
+        id="settingspanel"
+      >
         <SettingsInput type={"name"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,11 +61,33 @@ const SettingsPanel = () => {
         </SettingsInput>
         <button
           type="submit"
-          onClick={() => updateProfile()}
+          onClick={() => {
+            updateProfile() ? setUpdated(true) : setUpdated(false);
+          }}
           className="bg-[#60BF88] text-white text-xs p-2 sm:p-4 sm:text-2xl font-medium rounded-xl transition-[3s] hover:bg-[#3e7d58] shadow-sm shadow-black"
         >
           Update profile
         </button>
+        {updated ? (
+          <div className="flex flex-row gap-1 items-center justify-center bg-slate-700 p-1 rounded-lg text-[#e3e3e3]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-red-400 hover:text-red-500 transition-[5s] cursor-pointer"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+              onClick={() => setUpdated(false)}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+            <h1 className="font-medium">Profile has been updated</h1>
+          </div>
+        ) : null}
       </div>
     </>
   );

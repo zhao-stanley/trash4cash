@@ -1,10 +1,11 @@
 //just a simple way to "sign out" when there's no actual login validation
 
-const signOut = () => {
+const clearData = () => {
   localStorage.removeItem("name");
   localStorage.removeItem("username");
   localStorage.removeItem("status");
   localStorage.removeItem("pfp");
+  localStorage.removeItem("balance");
 };
 
-export default signOut;
+export default clearData;

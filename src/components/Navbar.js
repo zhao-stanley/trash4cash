@@ -5,9 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import icon from "../img/icon.png";
 import trash4cash from "../img/trash4cash.svg";
 import placeholder from "../img/placeholder.jpg";
-import signOut from "../utility/signOut";
-
-let balance = 361.25;
+import clearData from "../utility/clearData";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -20,6 +18,7 @@ const classNames = (...classes) => {
 };
 
 const Navbar = ({ current }) => {
+  let balance = localStorage.getItem("balance") ? localStorage.getItem("balance") : 0;
   let userimg = localStorage.getItem("pfp")
     ? localStorage.getItem("pfp")
     : placeholder;
@@ -159,9 +158,9 @@ const Navbar = ({ current }) => {
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700 transition-[3s]"
                             )}
-                            onClick={() => signOut()}
+                            onClick={() => clearData()}
                           >
-                            Sign out
+                            Clear data
                           </a>
                         )}
                       </Menu.Item>

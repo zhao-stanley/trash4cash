@@ -45,12 +45,17 @@ module.exports = {
         },
         money: {
           "0%, 100%": {
-            transform: "rotate(5deg) translateY(0)",
+            transform: "rotate(8deg) translateY(0)",
           },
           "50%": {
-            transform: "rotate(15deg) translateY(10px)",
+            transform: "rotate(10deg) translateY(10px)",
           },
         },
+        altspin:{
+          "0%": {
+            transform: "rotate(360deg)"
+          }
+        }
       },
       animation: {
         fadeIn: "fadeIn 1s ease forwards",
@@ -59,6 +64,7 @@ module.exports = {
         hovering: "hovering 5s ease-in-out infinite",
         bicycle: "bicycle 4s linear infinite",
         money: "money 4s ease-in-out infinite",
+        altspin: "altspin 1.5s ease-in-out infinite"
       },
     },
   },

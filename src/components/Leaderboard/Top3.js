@@ -1,5 +1,4 @@
 const Top3 = ({fPlace, sPlace, tPlace}) => {
-    console.log(fPlace.img)
   return (
     <>
       <div className="flex flex-row justify-center items-end max-w-full gap-2">

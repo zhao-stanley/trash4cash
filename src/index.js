@@ -6,6 +6,7 @@ import App from "./App";
 import Browse from "./routes/Browse";
 import Profile from "./routes/Profile"; 
 import Leaderboard from "./routes/Leaderboard";
+import Verify from "./routes/Verify";
 import Settings from "./routes/Settings";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="browse" element={<Browse />} />
         <Route path="leaderboard" element={<Leaderboard />} />
+        <Route path="verify" element={<Verify />} />
         <Route path="profile" element={<Profile />} />
         <Route path="settings" element={<Settings />} />
       </Routes>
