@@ -1,4 +1,5 @@
 const readImage = (file, dataimg) => {
+  
   const reader = new FileReader();
 
   reader.addEventListener(
@@ -6,8 +7,13 @@ const readImage = (file, dataimg) => {
     () => {
       // convert image file to base64 string
       dataimg = reader.result;
-      document.getElementById("userimg").style.backgroundImage = `url(${dataimg})`;
-      document.getElementById("navbarpfp").style.backgroundImage = `url(${dataimg})`;
+      if (dataimg.length > 5200000) return;
+      document.getElementById(
+        "userimg"
+      ).style.backgroundImage = `url(${dataimg})`;
+      document.getElementById(
+        "navbarpfp"
+      ).style.backgroundImage = `url(${dataimg})`;
       localStorage.setItem("pfp", dataimg);
     },
     false
