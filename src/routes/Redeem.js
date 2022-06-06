@@ -78,7 +78,7 @@ const Redeem = () => {
       //User is yet to redeem a gift card
       <>
         <Navbar />
-        <div className="bg-gray-800 h-auto w-full flex flex-col items-center font-[Inter] mb-12">
+        <div className="bg-gray-800 h-auto sm:h-[80vh] w-full flex flex-col items-center font-[Inter] mb-12">
           <div className="w-[80vw] max-w-5xl my-6 text-white">
             <h1 className="font-bold text-4xl mb-4">Redeem</h1>
             <p>Redeem your credit for gift cards at your favorite store!</p>
