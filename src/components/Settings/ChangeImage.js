@@ -10,11 +10,11 @@ const ChangeImage = () => {
     <>
       <label>
         <div
-          className="w-28 h-28 rounded-full hover:opacity-50 cursor-pointer transition-[3s] bg-cover bg-center"
+          className="w-28 h-28 lg:w-48 lg:h-48 rounded-full hover:opacity-50 cursor-pointer transition-[3s] bg-cover bg-center"
           style={{ backgroundImage: `url(${userimg ? userimg : placeholder})` }}
           id="userimg"
         ></div>
-        <h2 className="text-gray-400 text-xs mt-1 cursor-pointer text-center mx-auto">
+        <h2 className="text-gray-400 text-xs lg:text-lg mt-1 cursor-pointer text-center mx-auto">
           Upload an image
         </h2>
         <input

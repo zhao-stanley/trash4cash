@@ -2,23 +2,22 @@ import SettingsInput from "./SettingsInput";
 import updateProfile from "../../utility/updateProfile";
 import { useState } from "react";
 
-
 const SettingsPanel = () => {
   const [updated, setUpdated] = useState(null);
   return (
     <>
       <div
-        className="flex flex-col gap-4 w-full justify-center items-center mt-4"
+        className="flex flex-col gap-4 w-full max-w-5xl justify-center items-center mt-4"
         id="settingspanel"
       >
         <SettingsInput type={"name"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 lg:h-12 lg:w-12"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            strokeWidth={2}
+            strokeWidth={1}
           >
             <path
               strokeLinecap="round"
@@ -30,11 +29,11 @@ const SettingsPanel = () => {
         <SettingsInput type={"username"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 lg:h-12 lg:w-12"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            strokeWidth={2}
+            strokeWidth={1}
           >
             <path
               strokeLinecap="round"
@@ -43,14 +42,30 @@ const SettingsPanel = () => {
             />
           </svg>
         </SettingsInput>
-        <SettingsInput type={"status"}>
+        <SettingsInput type={"email"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 lg:h-12 lg:w-12"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            strokeWidth={2}
+            strokeWidth={1}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+        </SettingsInput>
+        <SettingsInput type={"status"}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 lg:h-12 lg:w-12"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1}
           >
             <path
               strokeLinecap="round"
@@ -64,7 +79,7 @@ const SettingsPanel = () => {
           onClick={() => {
             updateProfile() ? setUpdated(true) : setUpdated(false);
           }}
-          className="bg-[#60BF88] text-white text-xs p-2 sm:p-4 sm:text-2xl font-medium rounded-xl transition-[3s] hover:bg-[#3e7d58] shadow-sm shadow-black"
+          className="bg-[#60BF88] text-white text-xs p-2 sm:text-lg lg:p-4 lg:text-2xl font-medium rounded-xl transition-[3s] hover:bg-[#3e7d58] shadow-sm shadow-black"
         >
           Update profile
         </button>

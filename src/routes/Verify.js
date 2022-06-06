@@ -5,6 +5,7 @@ import Prefilled from "../components/Verify/Prefilled";
 import Receipt from "../components/Verify/Receipt";
 import stores from "../data/stores.json";
 import verifyReceipt from "../utility/verifyReceipt";
+import Footer from "../components/Footer/Footer";
 
 const useQuery = () => {
   const { search } = useLocation();
@@ -70,6 +71,7 @@ const Verify = () => {
           </Link>
         </div>
       )}
+      <Footer/>
     </>
   );
 };

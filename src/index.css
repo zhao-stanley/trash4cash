@@ -8,6 +8,8 @@
 :root {
   --scroll-active: #717171;
   --scrollbg: #252121;
+  --SLscroll-active: #717171;
+  --SLscrollbg: #fff;
 }
 
 * {
@@ -49,6 +51,29 @@ body::-webkit-scrollbar-thumb:active {
   background-color: var(--scroll-active);
 }
 
-#store-list::-webkit-scrollbar {
+/*#store-list::-webkit-scrollbar {
   display: none;
+}*/
+
+#store-list::-webkit-scrollbar {
+  width: 0.9em;
+}
+
+#store-list::-webkit-scrollbar-track {
+  background-color: var(--SLscrollbg);
+}
+
+#store-list::-webkit-scrollbar-thumb {
+  background-color: rgb(197, 197, 197);
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+#store-list::-webkit-scrollbar-thumb:hover {
+  background-color: var(--SLscroll-active);
+}
+
+#store-list::-webkit-scrollbar-thumb:active {
+  background-color: var(--SLscroll-active);
 }

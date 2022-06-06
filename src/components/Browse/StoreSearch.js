@@ -3,7 +3,7 @@ import searchFilter from "../../utility/searchFilter";
 
 const StoreSearch = () => {
   return (
-    <div className="flex flex-row items-center gap-2 rounded-lg py-1 px-2 mt-6 bg-white mb-2 w-[80%]">
+    <div className="flex flex-row items-center gap-2 rounded-lg py-1 px-2 mt-6 bg-white mb-2 w-[80vw] max-w-5xl">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-4 w-4"

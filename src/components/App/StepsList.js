@@ -6,7 +6,7 @@ import GSpan from "./GSpan";
 
 const StepsList = () => {
   return (
-    <>
+    <div className="flex flex-col gap-8">
       <Steps img={world} animate="animate-wiggle2" alt={"World"} svg={false}>
         1. <GSpan>Browse</GSpan> available stores
       </Steps>
@@ -25,7 +25,7 @@ const StepsList = () => {
         4. Submit your form and{" "}
         <GSpan>get rewarded</GSpan>
       </Steps>
-    </>
+    </div>
   );
 };
 

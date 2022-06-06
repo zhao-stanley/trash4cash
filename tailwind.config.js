@@ -37,10 +37,10 @@ module.exports = {
         },
         bicycle: {
           "100%": {
-            transform: "translateX(-100%)",
+            transform: "translateX(-100vw)",
           },
           "0%": {
-            transform: "translateX(100%)",
+            transform: "translateX(100vw)",
           },
         },
         money: {

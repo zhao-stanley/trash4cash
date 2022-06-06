@@ -1,0 +1,26 @@
+<svg width="152px" height="94px" viewBox="0 0 152 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>illu_amazongiftcard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="11.3638529%" y1="0%" x2="90.0033346%" y2="105.251327%" id="linearGradient-1">
+            <stop stop-color="#EB394F" offset="0%"></stop>
+            <stop stop-color="#DD283F" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4,2.22050026e-15 L148,2.22050026e-15 L148,1.77635684e-15 C150.209139,1.70674293e-14 152,1.790861 152,4 L152,90 L152,90 C152,92.209139 150.209139,94 148,94 L4,94 L4,94 C1.790861,94 9.00715826e-15,92.209139 8.8817842e-16,90 L0,4 L0,4 C-2.705415e-16,1.790861 1.790861,-4.82361547e-16 4,-8.8817842e-16 Z" id="path-2"></path>
+    </defs>
+    <g id="v3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-138.000000, -133.000000)">
+            <g id="illu_amazongiftcard" transform="translate(138.000000, 133.000000)">
+                <g id="Oval-2-+-Oval-2-Mask">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <path d="M116,75 C73.4740743,75 39,40.5259257 39,-2 C39,-44.5259257 73.4740743,-79 116,-79 C158.525926,-79 193,-44.5259257 193,-2 C193,40.5259257 158.525926,75 116,75 Z M116,46 C142.509668,46 164,24.509668 164,-2 C164,-28.509668 142.509668,-50 116,-50 C89.490332,-50 68,-28.509668 68,-2 C68,24.509668 89.490332,46 116,46 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                    <circle id="Oval-2" fill="#FFFFFF" mask="url(#mask-3)" cx="116" cy="-2" r="19"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

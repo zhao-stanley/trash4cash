@@ -11,6 +11,7 @@ const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Browse", href: "/browse", current: false },
   { name: "Leaderboard", href: "/leaderboard", current: false },
+  { name: "Rewards", href: "/rewards", current: false },
 ];
 
 const classNames = (...classes) => {

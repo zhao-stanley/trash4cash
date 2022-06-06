@@ -1,12 +1,12 @@
 const Steps = ({ img, children, animate, alt, svg }) => {
   return (
     <>
-      <div className="mb-8 flex flex-col items-center justify-center">
-        <h1 className="text-white text-3xl font-bold">{children}</h1>
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-white text-3xl font-bold mx-5 lg:text-5xl lg:max-w-[75vw]">{children}</h1>
         {svg ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-auto w-[40vw] text-[#5cf695] animate-altspin my-8"
+            className="h-auto text-[#5cf695] animate-altspin my-8 sm:w-[35vw] xl:w-96"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -19,7 +19,7 @@ const Steps = ({ img, children, animate, alt, svg }) => {
             />
           </svg>
         ) : (
-          <img src={img} className={animate} alt={alt} draggable={false}/>
+          <img src={img} className={`${animate} sm:w-[35vw] xl:w-96`} alt={alt} draggable={false}/>
         )}
       </div>
     </>

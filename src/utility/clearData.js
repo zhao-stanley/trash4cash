@@ -3,6 +3,7 @@
 const clearData = () => {
   localStorage.removeItem("name");
   localStorage.removeItem("username");
+  localStorage.removeItem("email");
   localStorage.removeItem("status");
   localStorage.removeItem("pfp");
   localStorage.removeItem("balance");

@@ -1,52 +1,52 @@
 [
     {
         "username": "$dprjin",
-        "earned": 10000,
+        "earned": 100000,
         "img": "data:image/png;base64,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"    
     },
     {
         "username": "$EN steph",
-        "earned": 9000,
+        "earned": 90000,
         "img": "https://cdn.discordapp.com/emojis/768157006879653889.webp"
     },
     {
-        "username": "purefrog",
-        "earned": 8000,
-        "img": "https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+        "username": "luigi",
+        "earned": 80000,
+        "img": "https://pbs.twimg.com/media/Ed31_Q2XYAAjvZE.jpg"
     },
     {
-        "username": "bagelbee",
-        "earned": 7000,
-        "img": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        "username": "andee",
+        "earned": 70000,
+        "img": "https://cdn.discordapp.com/attachments/929569076869726224/983166942489767976/IMG_9338.png"
     },
     {
-        "username": "rugbydrum",
-        "earned": 6000,
-        "img": "https://images.unsplash.com/photo-1484100356142-db6ab6244067?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1534&q=80"
+        "username": "vin",
+        "earned": 60000,
+        "img": "https://cdn.discordapp.com/attachments/929569076869726224/983166067369181184/mob.jpg"
     },
     {
-        "username": "ferneris",
-        "earned": 5000,
-        "img": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        "username": "ames",
+        "earned": 50000,
+        "img": "https://cdn.mos.cms.futurecdn.net/JycrJzD5tvbGHWgjtPrRZY-1200-80.jpg"
     },
     {
-        "username": "reindeer",
-        "earned": 4000,
-        "img": "https://images.unsplash.com/photo-1502230831726-fe5549140034?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+        "username": "snaccjacc",
+        "earned": 40000,
+        "img": "https://cdn.discordapp.com/attachments/929569076869726224/983168757188935690/B013E4CD-B27E-42D0-89EA-3D70213DAA0D.jpg"
     },
     {
-        "username": "kidneyfern",
-        "earned": 3000,
-        "img": "https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+        "username": "bahkito",
+        "earned": 30000,
+        "img": "https://cdn.discordapp.com/attachments/929569076869726224/983168681691451422/IMG_6546.png"
     },
     {
         "username": "chickenleg",
-        "earned": 2000,
+        "earned": 20000,
         "img": "https://images.unsplash.com/photo-1521178010706-baefe2334211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
     {
         "username": "moneysigneric",
-        "earned": 1000,
+        "earned": 10000,
         "img": "https://static-cdn.jtvnw.net/jtv_user_pictures/cb083154-722a-4633-875c-f5d33ce82d77-profile_image-300x300.png"
     }
 ]
